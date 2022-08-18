@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">    
+    <title>Ejemplo</title>
+    <script src="tesseract.min.js?version=vrs1" defer></script> 
+    <script src="face-api.min.js?version=vrs1" defer></script>
+    <script src="script_cam.js?version=vrs1" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <video autoplay loop webkit-playsinline playsinline muted id="video" width="400" height="400"></video>
+        <canvas id="foto" width="400" height="400"></canvas>
+        <div class="col">
+            <button id="sacafoto">Saca foto de CI</button>
+            <button id="comparar" disabled>Compara video con FOTO</button>
+            <hr>
+            <button id="detener" style="background-color: green;">Detener video</button>
+            <button id="limpiar" style="background-color: green;">Limpiar Textarea</button>
+            <button id="actualizar" onclick="window.location.reload();" style="background-color: green;">Actualizar página</button>
+            <hr>
+            <textarea id="resultado" name="resultado" rows="20" cols="50"></textarea>
+        </div>
+    </div> 
+</body>
+
+</html>
